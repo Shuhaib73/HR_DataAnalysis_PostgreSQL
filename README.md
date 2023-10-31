@@ -2,7 +2,7 @@
 
 ### Project Overview
 
-#### This project entails managing and analyzing HR-related data within a PostgreSQL database. The primary objectives are to:
+#### The core aim of this project is to conduct an in-depth data analysis on the HR dataset.This project entails managing and analyzing HR-related data within a PostgreSQL database. The primary objectives are to:
 
 ##### 1. Data Organization: Create a dedicated schema ("hr_schema") to structure HR-related data and set the search path accordingly.
 ##### 2. Data Import: Import HR data from an Excel file into the PostgreSQL database, ensuring compatibility with the schema and table structure.
