@@ -1,4 +1,4 @@
-# HR Data Analytics Project - PostgreSQL
+# HR Data Analytics Project - (PostgreSQL And Power BI)
 
 ### Project Overview
 
@@ -23,6 +23,14 @@ SELECT
 	TO_CHAR(COUNT('emp no'), 'FM999,999') AS Num_of_Employees
 FROM Employees
 ```
+<details>
+<summary>
+Click here to see the snapshot of output
+</summary>
+	<p align="center">
+	<img src="https://github.com/Shuhaib73/HR_DataAnalysis_PostgreSQL/blob/main/Images/Q1.PNG" />
+	</p>
+</details>
 
 #### ✒ Q2: How many employees have left the company ?
 
@@ -32,6 +40,14 @@ SELECT
 FROM Employees
 WHERE Attrition = 'Yes'
 ```
+<details>
+<summary>
+Click here to see the snapshot of output
+</summary>
+	<p align="center">
+	<img src="https://github.com/Shuhaib73/HR_DataAnalysis_PostgreSQL/blob/main/Images/Q2.PNG" />
+	</p>
+</details>
 
 #### ✒ Q3: How does job satisfaction vary across different departments?
 
@@ -42,7 +58,14 @@ SELECT
 FROM Employees
 GROUP BY Department
 ```
-
+<details>
+<summary>
+Click here to see the snapshot of output
+</summary>
+	<p align="center">
+	<img src="https://github.com/Shuhaib73/HR_DataAnalysis_PostgreSQL/blob/main/Images/Q3.PNG" />
+	</p>
+</details>
 
 #### ✒ Q4: What is the average monthly income for male and female employees?
 
@@ -53,6 +76,14 @@ SELECT
 FROM Employees
 GROUP BY Gender
 ```
+<details>
+<summary>
+Click here to see the snapshot of output
+</summary>
+	<p align="center">
+	<img src="https://github.com/Shuhaib73/HR_DataAnalysis_PostgreSQL/blob/main/Images/Q4.PNG" />
+	</p>
+</details>
 
 #### ✒ Q5: Which job role has the highest average monthly income?
 
@@ -64,7 +95,14 @@ FROM Employees
 GROUP BY "Job Role"
 ORDER BY Avg_Salary DESC LIMIT 3
 ```
-
+<details>
+<summary>
+Click here to see the snapshot of output
+</summary>
+	<p align="center">
+	<img src="https://github.com/Shuhaib73/HR_DataAnalysis_PostgreSQL/blob/main/Images/Q5.PNG" />
+	</p>
+</details>
 
 #### ✒ Q6: How many employees work overtime?
 
@@ -75,7 +113,14 @@ SELECT
 FROM Employees
 GROUP BY "Over Time"
 ```
-
+<details>
+<summary>
+Click here to see the snapshot of output
+</summary>
+	<p align="center">
+	<img src="https://github.com/Shuhaib73/HR_DataAnalysis_PostgreSQL/blob/main/Images/Q6.PNG" />
+	</p>
+</details>
 
 #### ✒ Q7: identify any correlation between Distance and Attrition? - This can provide insights into the attrition rate based on the distance from home for departing employees ?
 
@@ -88,6 +133,14 @@ WHERE Attrition = 'Yes'
 GROUP BY "Distance Status"
 ORDER BY Left_emp_count DESC
 ```
+<details>
+<summary>
+Click here to see the snapshot of output
+</summary>
+	<p align="center">
+	<img src="https://github.com/Shuhaib73/HR_DataAnalysis_PostgreSQL/blob/main/Images/Q7.PNG" />
+	</p>
+</details>
 
 #### ✒ Q8: identify any correlation between Business Travel and Attrition? This can provide insights into whether business travel impacts employee attrition rates ?
 
@@ -100,6 +153,14 @@ WHERE Attrition = 'Yes'
 GROUP BY "Business Travel"
 ORDER BY Left_emp_count DESC
 ```
+<details>
+<summary>
+Click here to see the snapshot of output
+</summary>
+	<p align="center">
+	<img src="https://github.com/Shuhaib73/HR_DataAnalysis_PostgreSQL/blob/main/Images/Q8.PNG" />
+	</p>
+</details>
 
 #### ✒ Q9: Attrition by Job Role? The results are displayed in descending order by the total attrition count, allowing us to understand which job roles experience the highest attrition rates
 
@@ -112,6 +173,14 @@ WHERE Attrition = 'Yes'
 GROUP BY "Job Role"
 ORDER BY Total_Attrition DESC
 ```
+<details>
+<summary>
+Click here to see the snapshot of output
+</summary>
+	<p align="center">
+	<img src="https://github.com/Shuhaib73/HR_DataAnalysis_PostgreSQL/blob/main/Images/Q9.PNG" />
+	</p>
+</details>
 
 
 #### ✒ Q10: Attrition by Qualification - providing insights into how attrition varies across different educational backgrounds.
@@ -125,6 +194,14 @@ WHERE Attrition = 'Yes'
 GROUP BY "Education"
 ORDER BY Total_Attrition DESC
 ```
+<details>
+<summary>
+Click here to see the snapshot of output
+</summary>
+	<p align="center">
+	<img src="https://github.com/Shuhaib73/HR_DataAnalysis_PostgreSQL/blob/main/Images/Q10.PNG" />
+	</p>
+</details>
 
 #### ✒ Q11: Attrition Rate by Gender - It provides insights into gender-based attrition rates within the organization ?
 
@@ -136,6 +213,14 @@ FROM Employees
 WHERE Attrition = 'Yes'
 GROUP BY Gender
 ```
+<details>
+<summary>
+Click here to see the snapshot of output
+</summary>
+	<p align="center">
+	<img src="https://github.com/Shuhaib73/HR_DataAnalysis_PostgreSQL/blob/main/Images/Q11.PNG" />
+	</p>
+</details>
 
 #### ✒ Q12: What is the impact of education level on monthly income ?
 
@@ -148,6 +233,15 @@ GROUP BY "Education"
 ORDER BY Avg_Monthly_Salary DESC
 ```
 
+<details>
+<summary>
+Click here to see the snapshot of output
+</summary>
+	<p align="center">
+	<img src="https://github.com/Shuhaib73/HR_DataAnalysis_PostgreSQL/blob/main/Images/Q12.PNG" />
+	</p>
+</details>
+
 #### ✒ Q13: What is the total number of employees?
 
 ```sql
@@ -159,6 +253,15 @@ FROM Employees
 GROUP BY Gender, "Marital Status"
 ```
 
+<details>
+<summary>
+Click here to see the snapshot of output
+</summary>
+	<p align="center">
+	<img src="https://github.com/Shuhaib73/HR_DataAnalysis_PostgreSQL/blob/main/Images/Q13.PNG" />
+	</p>
+</details>
+
 #### ✒ Q14: Can you identify any correlation between years at the company and job level for current employees?
 
 ```sql
@@ -169,6 +272,15 @@ FROM Employees
 GROUP BY "Job Level"
 ORDER BY "Job Level" 
 ```
+
+<details>
+<summary>
+Click here to see the snapshot of output
+</summary>
+	<p align="center">
+	<img src="https://github.com/Shuhaib73/HR_DataAnalysis_PostgreSQL/blob/main/Images/Q14.PNG" />
+	</p>
+</details>
 
 #### ✒ Q15: How does the average length of employment for departing employees vary by department and gender in the organization?
 
@@ -182,6 +294,14 @@ WHERE Attrition = 'Yes'
 GROUP BY Department, Gender
 ORDER BY Department
 ```
+<details>
+<summary>
+Click here to see the snapshot of output
+</summary>
+	<p align="center">
+	<img src="https://github.com/Shuhaib73/HR_DataAnalysis_PostgreSQL/blob/main/Images/Q15.PNG" />
+	</p>
+</details>
 
 #### ✒ Q16: What does the distribution of employees across various job roles in the organization look like, and which job role has the highest number of employees?
 
@@ -194,6 +314,14 @@ GROUP BY "Job Role"
 ORDER BY Num_of_Employees DESC
 ```
 
+<details>
+<summary>
+Click here to see the snapshot of output
+</summary>
+	<p align="center">
+	<img src="https://github.com/Shuhaib73/HR_DataAnalysis_PostgreSQL/blob/main/Images/Q16.PNG" />
+	</p>
+</details>
 
 ### These analyses offer in-depth insights into various aspects of employee dynamics, including retention patterns, demographic profiles, distribution across job roles, and key factors influencing attrition. By leveraging this data-driven approach, organizations can make informed decisions and formulate strategic HR initiatives to enhance employee engagement and address factors affecting retention.
 
