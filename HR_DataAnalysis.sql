@@ -52,7 +52,7 @@ CREATE TABLE Employees(
 
 -- 1. What is the total number of employees in the Dataset
 SELECT 
-	COUNT('emp no') AS Num_of_Employees
+	TO_CHAR(COUNT('emp no'), 'FM999,999') AS Num_of_Employees
 FROM Employees
 
 -- 2.How many employees have left the company ?
@@ -64,7 +64,7 @@ WHERE Attrition = 'Yes'
 -- 3. How does job satisfaction vary across different departments?
 SELECT 
 	Department,
-	ROUND(AVG("Job Satisfaction"),2)
+	ROUND(AVG("Job Satisfaction"),2) AS AVG_Satisfaction
 FROM Employees
 GROUP BY Department
 	
@@ -141,7 +141,7 @@ GROUP BY Gender
 -- 11. What is the impact of education level on monthly income?
 SELECT 
 	"Education",
-	ROUND(AVG("Monthly Income"),2) AS Avg_Monthly_Salary
+	TO_CHAR(AVG("Monthly Income"), 'FM999,999') AS Avg_Monthly_Salary
 FROM Employees
 GROUP BY "Education"
 ORDER BY Avg_Monthly_Salary DESC
@@ -157,7 +157,7 @@ GROUP BY Gender, "Marital Status"
 -- 13. Can you identify any correlation between years at the company and job level for current employees?
 SELECT 
 	"Job Level",
-	ROUND(AVG("Years At Company"),2) AS AvgYearsAtCompany
+	ROUND(AVG("Years At Company"),2) AS Avg_Years_AtCompany
 FROM Employees
 GROUP BY "Job Level"
 ORDER BY "Job Level" 
