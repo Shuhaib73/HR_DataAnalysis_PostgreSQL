@@ -100,7 +100,7 @@ WHERE Attrition = 'Yes'
 GROUP BY "Distance Status"
 ORDER BY Left_emp_count DESC
 
--- 7. identify any correlation between Business Travel and Attrition? This can provide insights into whether business travel impacts employee attrition rates.
+-- 8. identify any correlation between Business Travel and Attrition? This can provide insights into whether business travel impacts employee attrition rates.
 SELECT 	
 	"Business Travel",
 	Count(*) AS Left_emp_count
@@ -110,7 +110,7 @@ GROUP BY "Business Travel"
 ORDER BY Left_emp_count DESC
 
 
--- 8. Attrition by Job Role?
+-- 9. Attrition by Job Role?
 -- The results are displayed in descending order by the total attrition count, allowing us to understand which job roles experience the highest attrition rates
 SELECT 
 	"Job Role",
@@ -120,7 +120,7 @@ WHERE Attrition = 'Yes'
 GROUP BY "Job Role"
 ORDER BY Total_Attrition DESC
 
--- 9. Attrition by Qualification - providing insights into how attrition varies across different educational backgrounds.
+-- 10. Attrition by Qualification - providing insights into how attrition varies across different educational backgrounds.
 SELECT 
 	"Education",
 	COUNT(*) AS Total_Attrition
@@ -129,7 +129,7 @@ WHERE Attrition = 'Yes'
 GROUP BY "Education"
 ORDER BY Total_Attrition DESC
 
--- 10. Attrition Rate by Gender - It provides insights into gender-based attrition rates within the organization.
+-- 11. Attrition Rate by Gender - It provides insights into gender-based attrition rates within the organization.
 
 SELECT 
 	Gender,
@@ -138,7 +138,7 @@ FROM Employees
 WHERE Attrition = 'Yes'
 GROUP BY Gender
 
--- 11. What is the impact of education level on monthly income?
+-- 12. What is the impact of education level on monthly income?
 SELECT 
 	"Education",
 	TO_CHAR(AVG("Monthly Income"), 'FM999,999') AS Avg_Monthly_Salary
@@ -146,7 +146,7 @@ FROM Employees
 GROUP BY "Education"
 ORDER BY Avg_Monthly_Salary DESC
 
--- 12. Are there any demographic differences in employee satisfaction levels?
+-- 13. Are there any demographic differences in employee satisfaction levels?
 SELECT 
 	Gender,
 	"Marital Status",
@@ -154,7 +154,7 @@ SELECT
 FROM Employees
 GROUP BY Gender, "Marital Status"
 
--- 13. Can you identify any correlation between years at the company and job level for current employees?
+-- 14. Can you identify any correlation between years at the company and job level for current employees?
 SELECT 
 	"Job Level",
 	ROUND(AVG("Years At Company"),2) AS Avg_Years_AtCompany
@@ -162,7 +162,7 @@ FROM Employees
 GROUP BY "Job Level"
 ORDER BY "Job Level" 
 
--- 14. How does the average length of employment for departing employees vary by department and gender in the organization?
+-- 15. How does the average length of employment for departing employees vary by department and gender in the organization?
 SELECT 
 	Department,
 	Gender,
@@ -172,7 +172,7 @@ WHERE Attrition = 'Yes'
 GROUP BY Department, Gender
 ORDER BY Department
 	
--- 15. What does the distribution of employees across various job roles in the organization look like, and which job role has the highest number of employees?
+-- 16. What does the distribution of employees across various job roles in the organization look like, and which job role has the highest number of employees?
 SELECT 
 	"Job Role",
 	COUNT(*) AS Num_of_Employees
