@@ -1,17 +1,25 @@
-# HR Data Analytics Project - (PostgreSQL And Power BI)
+## **HR Data Analytics Project - (PostgreSQL And Power BI)**
 
-### Project Overview
+### **Project Overview**
 
 #### The core aim of this project is to conduct an in-depth data analysis on the HR dataset.This project entails managing and analyzing HR-related data within a PostgreSQL database. The primary objectives are to:
 
-##### 1. Data Organization: Create a dedicated schema ("hr_schema") to structure HR-related data and set the search path accordingly.
-##### 2. Data Import: Import HR data from an Excel file into the PostgreSQL database, ensuring compatibility with the schema and table structure.
-##### 3. Data Analysis: Execute SQL queries to gain insights into employee attrition, job roles, and other relevant HR metrics.
-##### 4. Attrition Analysis: Investigate factors contributing to employee attrition, such as business travel, job roles, education, and Job Satisfaction.
-##### 5. Tenure Analysis: Determine the average tenure of departing employees in different departments and gender categories.
-##### 6. Employee Satisfaction Analysis: Investigate demographic differences in employee satisfaction levels.
-##### 7. Years at Company and Job Level Analysis: Identify any correlation between years at the company and job level for current employees, providing insights into career progression and retention.
-##### 8. Job Role Distribution: Examine the distribution of employees across various job roles within the organization.
+### 1. Data Organization: 
+	Established a dedicated schema ("hr_schema") within the PostgreSQL database to systematically structure HR-related data. Adjust the search path to subsequent queries.
+### 2. Data Import: 
+	Imported HR data from a designated Excel file into the PostgreSQL database, ensuring seamless compatibility with the predefined schema and table structure.
+### 3. Data Analysis: 
+	Utilized SQL queries to conduct a comprehensive analysis of HR data. Explore key metrics such as employee attrition rates, job roles distribution, and other pertinent HR insights.
+### 4. Attrition Analysis: 
+	Delve into the factors influencing employee attrition. Investigate variables like business travel, job roles, education, and Job Satisfaction to identify patterns and potential contributors to attrition.
+### 5. Tenure Analysis: 
+	Determined the average tenure of departing employees across different departments and gender categories. This analysis sheds light on retention challenges and allows for targeted interventions.
+### 6. Employee Satisfaction Analysis: 
+	Explore demographic differences in employee satisfaction levels. Understand how factors like age, gender, or department affiliation may impact job satisfaction, providing valuable insights for HR strategies.
+### 7. Years at Company and Job Level Analysis: 
+	Investigate the correlation between years spent at the company and job levels among current employees. This analysis offers insights into career progression, employee retention, and potential areas for improvement.
+### 8. Job Role Distribution: 
+	Examine the distribution of employees across various job roles within the organization. This analysis helps in understanding the workforce composition, identifying any imbalances, and informing HR planning.
 
 
 ### Insights
